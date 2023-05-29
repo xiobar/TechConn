@@ -25,9 +25,9 @@
         android:id="@+id/txt_login_usuario"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/messageLog"
         android:layout_marginTop="40dp"
         android:hint="@string/ingrese_el_usuario"
+        android:textColorHint="@color/messageLog"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,10 +35,11 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_password"
-        android:textColorHint="@color/messageLog"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="@string/ingrese_contrase_a"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/messageLog"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,8 +52,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/mensajeLogin"
         android:textColor="@color/textDimcorp"
-        app:layout_constraintStart_toStartOf="parent"
         android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password" />
 
     <androidx.appcompat.widget.SwitchCompat
@@ -63,7 +64,7 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password"
-        app:thumbTint="@drawable/thump" />
+        app:thumbTint="@drawable/thump_dim" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
