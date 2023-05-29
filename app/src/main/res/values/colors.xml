@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    //imdiscor colores
+    <color name="backgroundImdiscor">#3F51B5</color>
+    <color name="cardViewImdiscor">#C5CAE9</color>
+    <color name="barraTittleImdiscor">#303F9F</color>
+    <color name="textImdiscor">#212121</color>
+    <color name="iconImdiscor">#FFFFFF</color>
+    <color name="messageLog">#757575</color>
+    //dimcorp colores
+    <color name="backgroundDimcorp">#F44336</color>
+    <color name="cardViewDimcorp">#FFCDD2</color>
+    <color name="barraTittleDimcorp">#D32F2F</color>
+    <color name="textDimcorp">#212121</color>
+    <color name="iconDimcorp">#FFFFFF</color>
+</resources>
