@@ -1,5 +1,6 @@
 package com.gkm.techconn.Vista
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -19,6 +20,8 @@ class LoginImdisActivity : AppCompatActivity() {
 
             if (verificadorUsuario(usuario, password)) {
                 Toast.makeText(this, "Usuario Correcto", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this,InicioBarActivity::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Usuario incorrecto", Toast.LENGTH_SHORT).show()
             }

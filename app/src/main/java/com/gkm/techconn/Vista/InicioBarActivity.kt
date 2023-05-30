@@ -8,7 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.gkm.techconn.databinding.ActivityInicioBarBinding
 import com.google.android.material.navigation.NavigationView
 
-class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class InicioBarActivity : AppCompatActivity()/*, NavigationView.OnNavigationItemSelectedListener*/ {
 
     private lateinit var drawer:DrawerLayout
     private lateinit var toogle:ActionBarDrawerToggle
@@ -19,6 +19,5 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         binding = ActivityInicioBarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val toolbar:Toolbar = binding.drawInicioBar.
     }
 }
