@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_item_ordenes"
+            android:title="Ordenes"/>
+        <item
+            android:id="@+id/nav_item_nuevo"
+            android:title="Nueva orden"/>
+        <item
+            android:id="@+id/nav_item_cliente"
+            android:title="Clientea"/>
+        <item
+            android:id="@+id/nav_item_producto"
+            android:title="Productos"/>
+        <item
+            android:id="@+id/nav_item_staPed"
+            android:title="Status de pedido"/>
+        <item
+            android:id="@+id/nav_item_fact"
+            android:title="Facturas"/>
+        <item
+            android:id="@+id/nav_item_mapa"
+            android:title="Mapas"/>
+        <item
+            android:id="@+id/nav_item_deuda"
+            android:title="Deudas por cobrar"/>
+        <item
+            android:id="@+id/nav_item_settings"
+            android:title="Opciones"/>
+    </group>
+</menu>
