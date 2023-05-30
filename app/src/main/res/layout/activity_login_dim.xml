@@ -16,14 +16,14 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/imdiscor"
+            android:contentDescription="@string/dimcorp"
             android:src="@drawable/dimcorp_logo" />
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_usuario"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:hint="@string/ingrese_el_usuario"
@@ -35,7 +35,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_password"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/ingrese_contrase_a"
         android:inputType="numberPassword"
@@ -57,17 +57,16 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/swi_record"
+        android:id="@+id/swi_dim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password"
         app:thumbTint="@drawable/thump_dim" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_logindim"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -83,6 +82,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="@string/mensajeLog"
         android:textAlignment="center"
         android:textColor="@color/messageLog"
@@ -90,6 +90,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_logindim" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@
     <color name="textImdiscor">#212121</color>
     <color name="iconImdiscor">#FFFFFF</color>
     <color name="messageLog">#757575</color>
+    <color name="colorBar">#BDBDBD</color>
     //dimcorp colores
     <color name="backgroundDimcorp">#F44336</color>
     <color name="cardViewDimcorp">#FFCDD2</color>
