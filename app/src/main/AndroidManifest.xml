@@ -15,11 +15,11 @@
         <activity
             android:name=".vista.InicioBarActivity"
             android:exported="false" />
-        <activity
+        <!-- <activity
             android:name=".vista.InicioActivity"
             android:exported="false"
             android:label="@string/title_activity_inicio"
-            android:theme="@style/Theme.TechConn.NoActionBar" />
+            android:theme="@style/Theme.TechConn.NoActionBar" />-->
         <activity
             android:name=".vista.LoginDimActivity"
             android:exported="false" />
