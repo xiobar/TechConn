@@ -5,7 +5,7 @@
     android:id="@+id/draw_inicio_bar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vista.InicioBarActivity"
+    tools:context=".vista.InicioBarActivity"
     tools:openDrawer="start">
 
     <include
@@ -15,8 +15,8 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_draw_imd"/>

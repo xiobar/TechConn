@@ -13,21 +13,21 @@
         android:theme="@style/Theme.TechConn"
         tools:targetApi="31">
         <activity
-            android:name=".Vista.InicioBarActivity"
+            android:name=".vista.InicioBarActivity"
             android:exported="false" />
         <activity
-            android:name=".Vista.InicioActivity"
+            android:name=".vista.InicioActivity"
             android:exported="false"
             android:label="@string/title_activity_inicio"
             android:theme="@style/Theme.TechConn.NoActionBar" />
         <activity
-            android:name=".Vista.LoginDimActivity"
+            android:name=".vista.LoginDimActivity"
             android:exported="false" />
         <activity
-            android:name=".Vista.LoginImdisActivity"
+            android:name=".vista.LoginImdisActivity"
             android:exported="false" />
         <activity
-            android:name=".Vista.SelectorActivity"
+            android:name=".vista.SelectorActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

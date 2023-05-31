@@ -1,4 +1,4 @@
-package com.gkm.techconn.Vista
+package com.gkm.techconn.vista
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -3,30 +3,39 @@
     <group>
         <item
             android:id="@+id/nav_item_ordenes"
-            android:title="Ordenes"/>
+            android:icon="@drawable/document"
+            android:title="@string/ordenes"/>
         <item
             android:id="@+id/nav_item_nuevo"
-            android:title="Nueva orden"/>
+            android:icon="@drawable/orden_nuevo"
+            android:title="@string/nueva_orden"/>
         <item
             android:id="@+id/nav_item_cliente"
-            android:title="Clientea"/>
+            android:icon="@drawable/user_outline"
+            android:title="@string/clientes"/>
         <item
             android:id="@+id/nav_item_producto"
-            android:title="Productos"/>
+            android:icon="@drawable/product"
+            android:title="@string/productos"/>
         <item
             android:id="@+id/nav_item_staPed"
-            android:title="Status de pedido"/>
+            android:icon="@drawable/list_status"
+            android:title="@string/status_de_pedido"/>
         <item
             android:id="@+id/nav_item_fact"
-            android:title="Facturas"/>
+            android:icon="@drawable/factura"
+            android:title="@string/facturas"/>
         <item
             android:id="@+id/nav_item_mapa"
-            android:title="Mapas"/>
+            android:icon="@drawable/map"
+            android:title="@string/mapas"/>
         <item
             android:id="@+id/nav_item_deuda"
-            android:title="Deudas por cobrar"/>
+            android:icon="@drawable/deudas"
+            android:title="@string/deudas_por_cobrar"/>
         <item
             android:id="@+id/nav_item_settings"
-            android:title="Opciones"/>
+            android:icon="@drawable/opciones"
+            android:title="@string/opciones"/>
     </group>
 </menu>

@@ -1,27 +1,24 @@
-package com.gkm.techconn.Vista
+package com.gkm.techconn.vista
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.gkm.techconn.databinding.ActivityLoginBinding
+import com.gkm.techconn.databinding.ActivityLoginDimBinding
 
-class LoginImdisActivity : AppCompatActivity() {
+class LoginDimActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityLoginDimBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLoginDimBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnLogin.setOnClickListener {
+        binding.btnLogindim.setOnClickListener {
             val usuario = binding.txtLoginUsuario.text.toString()
             val password = binding.txtLoginPassword.text.toString()
 
             if (verificadorUsuario(usuario, password)) {
                 Toast.makeText(this, "Usuario Correcto", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this,InicioBarActivity::class.java)
-                startActivity(intent)
             } else {
                 Toast.makeText(this, "Usuario incorrecto", Toast.LENGTH_SHORT).show()
             }
@@ -29,8 +26,8 @@ class LoginImdisActivity : AppCompatActivity() {
     }
 
     private fun verificadorUsuario(usuario: String, password: String): Boolean {
-        val user = "DAVID"
-        val pass = "123456"
+        val user = "DARIO"
+        val pass = "12345"
         return user == usuario && pass == password
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context=".Vista.SelectorActivity">
+    tools:context=".vista.SelectorActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewImdiscor"

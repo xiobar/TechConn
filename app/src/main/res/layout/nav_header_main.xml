@@ -14,6 +14,7 @@
 
     <ImageView
         android:id="@+id/nav_header_imgView"
+        android:contentDescription="@string/imdiscor"
         android:layout_gravity="center"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -23,8 +24,10 @@
         android:id="@+id/nav_header_txtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
         android:paddingTop="16dp"
-        android:text="Menu de opciones"
+        android:text="@string/menu_de_opciones"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
 </LinearLayout>
