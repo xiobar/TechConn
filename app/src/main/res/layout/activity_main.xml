@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context=".vista.SelectorActivity">
+    tools:context=".viewModel.SelectorActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewImdiscor"
@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="onCardViewClicked"
-        app:cardBackgroundColor="@color/backgroundImdiscor">
+        app:cardBackgroundColor="@color/cardViewImdiscor">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="cardClickedDimcorp"
-        app:cardBackgroundColor="@color/backgroundDimcorp">
+        app:cardBackgroundColor="@color/cardViewDimcorp">
 
         <ImageView
             android:layout_width="wrap_content"

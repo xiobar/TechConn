@@ -1,4 +1,4 @@
-package com.gkm.techconn.vista
+package com.gkm.techconn.viewModel
 
 import android.content.Intent
 import android.content.SharedPreferences

@@ -1,4 +1,4 @@
-package com.gkm.techconn.vista
+package com.gkm.techconn.viewModel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -5,7 +5,7 @@
     android:id="@+id/draw_inicio_bar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vista.InicioBarActivity"
+    tools:context=".viewModel.InicioBarActivity"
     tools:openDrawer="start">
 
     <include

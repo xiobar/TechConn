@@ -4,38 +4,38 @@
         <item
             android:id="@+id/nav_item_ordenes"
             android:icon="@drawable/document"
-            android:title="@string/ordenes"/>
+            android:title="@string/ordenes" />
         <item
             android:id="@+id/nav_item_nuevo"
             android:icon="@drawable/orden_nuevo"
-            android:title="@string/nueva_orden"/>
+            android:title="@string/nueva_orden" />
         <item
             android:id="@+id/nav_item_cliente"
             android:icon="@drawable/user_outline"
-            android:title="@string/clientes"/>
+            android:title="@string/clientes" />
         <item
             android:id="@+id/nav_item_producto"
             android:icon="@drawable/product"
-            android:title="@string/productos"/>
+            android:title="@string/productos" />
         <item
             android:id="@+id/nav_item_staPed"
             android:icon="@drawable/list_status"
-            android:title="@string/status_de_pedido"/>
+            android:title="@string/status_de_pedido" />
         <item
             android:id="@+id/nav_item_fact"
             android:icon="@drawable/factura"
-            android:title="@string/facturas"/>
+            android:title="@string/facturas" />
         <item
             android:id="@+id/nav_item_mapa"
             android:icon="@drawable/map"
-            android:title="@string/mapas"/>
+            android:title="@string/mapas" />
         <item
             android:id="@+id/nav_item_deuda"
             android:icon="@drawable/deudas"
-            android:title="@string/deudas_por_cobrar"/>
+            android:title="@string/deudas_por_cobrar" />
         <item
             android:id="@+id/nav_item_settings"
             android:icon="@drawable/opciones"
-            android:title="@string/opciones"/>
+            android:title="@string/opciones" />
     </group>
 </menu>
