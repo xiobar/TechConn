@@ -9,21 +9,24 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.gkm.techconn.R
+import com.gkm.techconn.databinding.ActivityInicioBarBinding
 import com.google.android.material.navigation.NavigationView
 
 class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    private lateinit var binding: ActivityInicioBarBinding
     private lateinit var drawer:DrawerLayout
     private lateinit var toogle:ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inicio_bar)
+        binding = ActivityInicioBarBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val toolbar:androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
-        drawer = findViewById(R.id.draw_inicio_bar)
+        drawer = binding.drawInicioBar
 
         toogle = ActionBarDrawerToggle(this,drawer,toolbar,R.string.nav_draw_open, R.string.nav_draw_close)
         drawer.addDrawerListener(toogle)
@@ -31,7 +34,7 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
 
-        val navigationView:NavigationView = findViewById(R.id.nav_view)
+        val navigationView:NavigationView = binding.navView
         navigationView.setNavigationItemSelectedListener (this)
     }
 
