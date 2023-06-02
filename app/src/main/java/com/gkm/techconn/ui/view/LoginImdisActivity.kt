@@ -1,4 +1,4 @@
-package com.gkm.techconn.viewModel
+package com.gkm.techconn.ui.view
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -63,7 +63,7 @@ class LoginImdisActivity : AppCompatActivity() {
     }
 
     private fun navergarTo(){
-        val intent = Intent(this,InicioBarActivity::class.java)
+        val intent = Intent(this, InicioBarActivity::class.java)
         startActivity(intent)
         finish()
     }

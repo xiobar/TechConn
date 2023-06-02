@@ -1,4 +1,4 @@
-package com.gkm.techconn.viewModel
+package com.gkm.techconn.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

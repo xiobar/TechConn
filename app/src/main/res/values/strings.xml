@@ -8,9 +8,8 @@
     <string name="ingresar">INGRESAR</string>
     <string name="mensajeLog">Si olvido su contraseña, comunicarse directamente con la empresa
     para que pueda acceder al sistema.</string>
-    <string name="ingrese_contrase_a">Ingrese contraseña</string>
-    <string name="ingrese_el_usuario">Ingrese el usuario</string>
-    <string name="ingrese_el_contrase_a">Ingrese el contraseña</string>
+    <string name="ingrese_contrase_a">Contraseña</string>
+    <string name="ingrese_el_usuario">Usuario</string>
     <string name="title_activity_inicio">InicioActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

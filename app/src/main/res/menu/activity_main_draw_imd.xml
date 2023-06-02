@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
+            android:id="@+id/nav_item_inicio"
+            android:icon="@drawable/document"
+            android:title="@string/ordenes" />
+        <item
             android:id="@+id/nav_item_ordenes"
             android:icon="@drawable/document"
             android:title="@string/ordenes" />

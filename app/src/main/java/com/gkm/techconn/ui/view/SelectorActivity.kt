@@ -1,4 +1,4 @@
-package com.gkm.techconn.viewModel
+package com.gkm.techconn.ui.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -17,12 +17,12 @@ class SelectorActivity : AppCompatActivity() {
     }
 
     fun onCardViewClicked(view: View) {
-        val intent = Intent(this,LoginImdisActivity::class.java)
+        val intent = Intent(this, LoginImdisActivity::class.java)
         startActivity(intent)
     }
 
     fun cardClickedDimcorp(view: View) {
-        val intent = Intent(this,LoginDimActivity::class.java)
+        val intent = Intent(this, LoginDimActivity::class.java)
         startActivity(intent)
     }
 }

@@ -1,4 +1,4 @@
-package com.gkm.techconn.viewModel
+package com.gkm.techconn.ui.view
 
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentManager
 import com.gkm.techconn.R
 import com.gkm.techconn.databinding.ActivityInicioBarBinding
 import com.google.android.material.navigation.NavigationView
@@ -39,6 +40,7 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        FragmentManager fm = getSupportFragmentManager()
         when (item.itemId){
             R.id.nav_item_ordenes -> Toast.makeText(this,"Ordenes",Toast.LENGTH_SHORT).show()
             R.id.nav_item_nuevo -> Toast.makeText(this,"Nueva orden",Toast.LENGTH_SHORT).show()

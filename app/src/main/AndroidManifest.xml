@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +15,7 @@
         android:theme="@style/Theme.TechConn"
         tools:targetApi="31">
         <activity
-            android:name=".viewModel.InicioBarActivity"
+            android:name=".ui.view.InicioBarActivity"
             android:exported="false" />
         <!-- <activity
             android:name=".vista.InicioActivity"
@@ -21,13 +23,13 @@
             android:label="@string/title_activity_inicio"
             android:theme="@style/Theme.TechConn.NoActionBar" />-->
         <activity
-            android:name=".viewModel.LoginDimActivity"
+            android:name=".ui.view.LoginDimActivity"
             android:exported="false" />
         <activity
-            android:name=".viewModel.LoginImdisActivity"
+            android:name=".ui.view.LoginImdisActivity"
             android:exported="false" />
         <activity
-            android:name=".viewModel.SelectorActivity"
+            android:name=".ui.view.SelectorActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
