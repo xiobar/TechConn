@@ -9,6 +9,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.gkm.techconn.R
 import com.gkm.techconn.databinding.ActivityInicioBarBinding
 import com.google.android.material.navigation.NavigationView
@@ -40,9 +41,11 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        FragmentManager fm = getSupportFragmentManager()
+        val fm:FragmentManager= supportFragmentManager
+        val ft:FragmentTransaction=fm.beginTransaction()
         when (item.itemId){
-            R.id.nav_item_ordenes -> Toast.makeText(this,"Ordenes",Toast.LENGTH_SHORT).show()
+            R.id.nav_item_inicio -> ft.replace(R.id.content,InicioFragment()).commit()
+            R.id.nav_item_ordenes -> ft.replace(R.id.content,OrdenFragment()).commit()
             R.id.nav_item_nuevo -> Toast.makeText(this,"Nueva orden",Toast.LENGTH_SHORT).show()
             R.id.nav_item_cliente -> Toast.makeText(this,"Clientes",Toast.LENGTH_SHORT).show()
             R.id.nav_item_producto -> Toast.makeText(this,"Producto",Toast.LENGTH_SHORT).show()
