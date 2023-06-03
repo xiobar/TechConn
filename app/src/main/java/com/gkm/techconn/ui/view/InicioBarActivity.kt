@@ -4,7 +4,6 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -46,14 +45,14 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         when (item.itemId){
             R.id.nav_item_inicio -> ft.replace(R.id.content,InicioFragment()).commit()
             R.id.nav_item_ordenes -> ft.replace(R.id.content,OrdenFragment()).commit()
-            R.id.nav_item_nuevo -> Toast.makeText(this,"Nueva orden",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_cliente -> Toast.makeText(this,"Clientes",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_producto -> Toast.makeText(this,"Producto",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_staPed -> Toast.makeText(this,"Status del pedido",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_fact -> Toast.makeText(this,"Factura",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_mapa -> Toast.makeText(this,"Mapa",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_deuda -> Toast.makeText(this,"Deudas por cobrar",Toast.LENGTH_SHORT).show()
-            R.id.nav_item_settings -> Toast.makeText(this,"Opciones",Toast.LENGTH_SHORT).show()
+            R.id.nav_item_nuevo -> ft.replace(R.id.content,CrearOrdenFragment()).commit()
+            R.id.nav_item_cliente -> ft.replace(R.id.content,ClientesFragment()).commit()
+            R.id.nav_item_producto -> ft.replace(R.id.content,ProductosFragment()).commit()
+            R.id.nav_item_staPed -> ft.replace(R.id.content,EstatusFragment()).commit()
+            R.id.nav_item_fact -> ft.replace(R.id.content,FacturasFragment()).commit()
+            R.id.nav_item_mapa -> ft.replace(R.id.content,MapasFragment()).commit()
+            R.id.nav_item_deuda -> ft.replace(R.id.content,DeudaFragment()).commit()
+            R.id.nav_item_settings -> ft.replace(R.id.content,OpcionesFragment()).commit()
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
