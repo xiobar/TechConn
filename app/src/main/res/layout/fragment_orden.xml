@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,139 +7,21 @@
     tools:context=".ui.view.OrdenFragment">
 
     <EditText
+        android:id="@+id/fragment_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Buscar"
+        android:hint="@string/buscar"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:singleLine="true"
         android:textSize="20sp" />
 
-    <androidx.cardview.widget.CardView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_ordenes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:cardBackgroundColor="@color/cardViewImdiscor">
+        android:layout_marginTop="50dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/txt_ord_cliente"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REYNALDO SANCHEZ"
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txt_ord_cod"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nro Orden: "
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_cliente" />
-
-            <TextView
-                android:id="@+id/txt_ord_codigo"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="11923"
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toEndOf="@+id/txt_ord_cod"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_cliente" />
-
-            <TextView
-                android:id="@+id/txt_ord_fec"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fecha: "
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_cod" />
-
-            <TextView
-                android:id="@+id/txt_ord_fecha"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="31dp"
-                android:text="02/27/2023 22:38:21"
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toEndOf="@+id/txt_ord_fec"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_codigo" />
-
-            <TextView
-                android:id="@+id/txt_ord_tot"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Total: "
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_fec" />
-
-            <TextView
-                android:id="@+id/txt_ord_total"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="37dp"
-                android:text="202.48"
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toEndOf="@+id/txt_ord_tot"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_fecha" />
-
-            <TextView
-                android:id="@+id/txt_ord_sta"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/estado"
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_tot" />
-
-            <TextView
-                android:id="@+id/txt_ord_status"
-                style="@style/BoldText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
-                android:text="@string/facturado"
-                android:textColor="@color/textImdiscor"
-                app:layout_constraintStart_toEndOf="@+id/txt_ord_sta"
-                app:layout_constraintTop_toBottomOf="@+id/txt_ord_total" />
-
-            <ImageView
-                android:id="@+id/img_ord_edit"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:clickable="true"
-                android:contentDescription="@string/eliminar"
-                android:src="@drawable/eliminar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/img_ord_trash"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="8dp"
-                android:clickable="true"
-                android:contentDescription="@string/editar"
-                android:src="@drawable/editar"
-                app:layout_constraintEnd_toStartOf="@+id/img_ord_edit"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>

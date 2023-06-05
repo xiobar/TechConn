@@ -41,4 +41,8 @@
     <string name="facturado">Facturado</string>
     <string name="estado">Estado:</string>
     <string name="foto_vendedor">Foto vendedor</string>
+    <string name="buscar">Buscar</string>
+    <string name="nro_orden">Nro Orden:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="total">Total:</string>
 </resources>

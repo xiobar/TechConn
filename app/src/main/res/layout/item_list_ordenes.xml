@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/cardViewImdiscor"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_ord_cliente"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="REYNALDO SANCHEZ" />
+
+        <TextView
+            android:id="@+id/txt_ord_cod"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nro_orden"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_cliente" />
+
+        <TextView
+            android:id="@+id/txt_ord_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_ord_cod"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_cliente"
+            tools:text="11923" />
+
+        <TextView
+            android:id="@+id/txt_ord_fec"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_cod" />
+
+        <TextView
+            android:id="@+id/txt_ord_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_ord_fec"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_codigo"
+            tools:text="02/27/2023 22:38:21" />
+
+        <TextView
+            android:id="@+id/txt_ord_tot"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_fec" />
+
+        <TextView
+            android:id="@+id/txt_ord_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_ord_tot"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_fecha"
+            tools:text="202.48" />
+
+        <TextView
+            android:id="@+id/txt_ord_sta"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estado"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_tot" />
+
+        <TextView
+            android:id="@+id/txt_ord_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_ord_sta"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ord_total"
+            tools:text="@string/facturado" />
+
+        <ImageView
+            android:id="@+id/img_ord_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/eliminar"
+            android:src="@drawable/eliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_ord_trash"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/editar"
+            android:src="@drawable/editar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_ord_edit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
