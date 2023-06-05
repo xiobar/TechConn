@@ -45,4 +45,11 @@
     <string name="nro_orden">Nro Orden:</string>
     <string name="fecha">Fecha:</string>
     <string name="total">Total:</string>
+    <string name="codigo">Codigo:</string>
+    <string name="indice">Indice:</string>
+    <string name="marca">Marca:</string>
+    <string name="precio">Precio:</string>
+    <string name="imagen">imagen</string>
+    <string name="empaque">Empaque:</string>
+    <string name="stock">Stock:</string>
 </resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/cardViewImdiscor"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_pro_descr"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="MANGUERA PARA GAS 100 MTS" />
+
+        <TextView
+            android:id="@+id/txt_pro_cod"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/codigo"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_descr" />
+
+        <TextView
+            android:id="@+id/txt_pro_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_pro_cod"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_descr"
+            tools:text="6-5-18" />
+
+        <TextView
+            android:id="@+id/txt_pro_marc"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/marca"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_pro_codigo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_descr" />
+
+        <TextView
+            android:id="@+id/txt_pro_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_pro_marc"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_descr"
+            tools:text="PLATINUM" />
+
+        <TextView
+            android:id="@+id/txt_pro_emp"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empaque"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_marc" />
+
+        <TextView
+            android:id="@+id/txt_pro_empaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_pro_emp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_marca"
+            tools:text="ROLLO" />
+
+        <TextView
+            android:id="@+id/txt_pro_sto"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/stock"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_pro_empaque"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_marc" />
+
+        <TextView
+            android:id="@+id/txt_pro_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@+id/txt_pro_sto"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pro_marca"
+            tools:text="100" />
+
+        <TextView
+            android:id="@+id/txt_pro_ind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textImdiscor"
+            android:layout_marginStart="35dp"
+            style = "@style/BoldText"
+            android:text="@string/indice"
+            app:layout_constraintTop_toBottomOf="@id/txt_pro_marca"
+            app:layout_constraintStart_toEndOf="@id/txt_pro_stock"/>
+
+        <TextView
+            android:id="@+id/txt_pro_indice"
+            android:textColor="@color/textImdiscor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            tools:text="L"
+            app:layout_constraintStart_toEndOf="@id/txt_pro_ind"
+            app:layout_constraintTop_toBottomOf="@id/txt_pro_marca"/>
+
+        <TextView
+            android:id="@+id/txt_pro_prec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style = "@style/BoldText"
+            android:text="@string/precio"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_pro_emp" />
+
+        <TextView
+            android:id="@+id/txt_pro_precio"
+            android:textColor="@color/textImdiscor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="63.50"
+            app:layout_constraintStart_toEndOf="@id/txt_pro_prec"
+            app:layout_constraintTop_toBottomOf="@id/txt_pro_empaque"
+            android:layout_marginStart="34dp"/>
+
+        <ImageView
+            android:contentDescription="@string/imagen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
