@@ -19,7 +19,6 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/backgroundImdiscor"
             app:layout_scrollFlags="scroll|snap"
-            app:title="Inicio"
             app:titleTextColor="@color/iconImdiscor"
             android:theme="@style/ToolbarPopupTheme"/>
     </com.google.android.material.appbar.AppBarLayout>

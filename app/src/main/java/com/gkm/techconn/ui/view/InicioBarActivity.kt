@@ -39,20 +39,45 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         navigationView.setNavigationItemSelectedListener (this)
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val fm:FragmentManager= supportFragmentManager
-        val ft:FragmentTransaction=fm.beginTransaction()
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {  //Navegador de items menu
+        val fm:FragmentManager= supportFragmentManager  //Controla lso reemplazos del fragment
+        val ft:FragmentTransaction=fm.beginTransaction()  //Controla el como inia el fragment
         when (item.itemId){
-            R.id.nav_item_inicio -> ft.replace(R.id.content,InicioFragment()).commit()
-            R.id.nav_item_ordenes -> ft.replace(R.id.content,OrdenFragment()).commit()
-            R.id.nav_item_nuevo -> ft.replace(R.id.content,CrearOrdenFragment()).commit()
-            R.id.nav_item_cliente -> ft.replace(R.id.content,ClientesFragment()).commit()
-            R.id.nav_item_producto -> ft.replace(R.id.content,ProductosFragment()).commit()
-            R.id.nav_item_staPed -> ft.replace(R.id.content,EstatusFragment()).commit()
-            R.id.nav_item_fact -> ft.replace(R.id.content,FacturasFragment()).commit()
-            R.id.nav_item_mapa -> ft.replace(R.id.content,MapasFragment()).commit()
-            R.id.nav_item_deuda -> ft.replace(R.id.content,DeudaFragment()).commit()
-            R.id.nav_item_settings -> ft.replace(R.id.content,OpcionesFragment()).commit()
+            R.id.nav_item_inicio -> {
+                binding.inluye.toolbarMain.title = "Inicio"
+                ft.replace(R.id.content,InicioFragment()).commit()}
+            R.id.nav_item_ordenes -> {
+                binding.inluye.toolbarMain.title = "Ordenes"
+                ft.replace(R.id.content,OrdenFragment()).commit()}
+            R.id.nav_item_nuevo -> {
+                binding.inluye.toolbarMain.title = "Nueva orden"
+                ft.replace(R.id.content,CrearOrdenFragment()).commit()}
+            R.id.nav_item_cliente -> {
+                binding.inluye.toolbarMain.title = "Clientes"
+                ft.replace(R.id.content,ClientesFragment()).commit()}
+            R.id.nav_item_producto -> {
+                binding.inluye.toolbarMain.title = "Producto"
+                ft.replace(R.id.content,ProductosFragment()).commit()}
+            R.id.nav_item_staPed -> {
+                binding.inluye.toolbarMain.title = "Estado Pedido"
+                ft.replace(R.id.content,EstatusFragment()).commit()
+            }
+            R.id.nav_item_fact -> {
+                binding.inluye.toolbarMain.title = "Facturas"
+                ft.replace(R.id.content,FacturasFragment()).commit()
+            }
+            R.id.nav_item_mapa -> {
+                binding.inluye.toolbarMain.title = "Mapa"
+                ft.replace(R.id.content,MapasFragment()).commit()
+            }
+            R.id.nav_item_deuda -> {
+                binding.inluye.toolbarMain.title = "Deudas"
+                ft.replace(R.id.content,DeudaFragment()).commit()
+            }
+            R.id.nav_item_settings -> {
+                binding.inluye.toolbarMain.title = "Opciones"
+                ft.replace(R.id.content,OpcionesFragment()).commit()
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
