@@ -54,9 +54,10 @@ class OrdenFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
+        adapter = ordenesAdapter(ordenesMuteableList)
         val manager = LinearLayoutManager(requireContext())
         binding.recyclerOrdenes.layoutManager = manager
-        binding.recyclerOrdenes.adapter = ordenesAdapter(ordenesInfomracion.ordenList)
+        binding.recyclerOrdenes.adapter = adapter
 
 
     }
