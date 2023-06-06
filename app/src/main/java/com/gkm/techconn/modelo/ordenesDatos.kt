@@ -8,12 +8,13 @@ data class ordenesDatos(
     val estado: String
 )
 
-data class productos(
+data class productosDatos(
     val descripcion: String,
     val codigo: String,
     val marca: String,
     val empaque: String,
     val stock: String,
-    val indisce: String,
-    val precio: String
+    val indice: String,
+    val precio: String,
+    val imagen:String
 )

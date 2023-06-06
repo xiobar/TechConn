@@ -1,9 +1,7 @@
 package com.gkm.techconn.adapter
 
 import android.view.View
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.gkm.techconn.R
 import com.gkm.techconn.databinding.ItemListOrdenesBinding
 import com.gkm.techconn.modelo.ordenesDatos
 
