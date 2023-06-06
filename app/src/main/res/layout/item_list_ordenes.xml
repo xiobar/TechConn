@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardBackgroundColor="@color/cardViewImdiscor"
-    app:cardCornerRadius="20dp"
+    app:cardCornerRadius="15dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
@@ -110,7 +109,9 @@
             android:id="@+id/img_ord_edit"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:clickable="true"
             android:contentDescription="@string/eliminar"
+            android:focusable="true"
             android:src="@drawable/eliminar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -120,7 +121,9 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
+            android:clickable="true"
             android:contentDescription="@string/editar"
+            android:focusable="true"
             android:src="@drawable/editar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/img_ord_edit" />
