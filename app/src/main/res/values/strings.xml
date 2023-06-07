@@ -52,4 +52,5 @@
     <string name="imagen">imagen</string>
     <string name="empaque">Empaque:</string>
     <string name="stock">Stock:</string>
+    <string name="recordar">recordar</string>
 </resources>
