@@ -38,6 +38,7 @@ class ProductosFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         binding = FragmentProductosBinding.inflate(inflater, container, false)
+
         return binding.root//inflater.inflate(R.layout.fragment_productos, container, false)
     }
 
@@ -47,6 +48,7 @@ class ProductosFragment : Fragment() {
             val productoFiltrado = productoMutableList.filter { producto ->
                 producto.descripcion.lowercase().contains(productFilter.toString().lowercase())
             }
+
             adapter.updateProductos(productoFiltrado)
         }
 
@@ -54,7 +56,7 @@ class ProductosFragment : Fragment() {
     }
 
     private fun initRecyclerView(){
-        adapter = productoAdapter(productoMutableList)
+        adapter = productoAdapter(productoMutableList, this)
         val manager = LinearLayoutManager(requireContext())
         binding.recyclerProducto.layoutManager = manager
         binding.recyclerProducto.adapter = adapter

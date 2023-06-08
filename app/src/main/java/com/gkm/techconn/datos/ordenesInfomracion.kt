@@ -41,10 +41,10 @@ class ordenesInfomracion {
                 "PENDIENTE"
             ),
             ordenesDatos(
-                "ALVAREZ IDROVO SILVIA REBECA",
-                "19382",
-                "07/20/2023",
-                "220.40",
+                "YAGUAL MENDOZA VICENTE MANUEL",
+                "18739",
+                "07/12/2023",
+                "309.40",
                 "FACTURADO"
             ),
             ordenesDatos(

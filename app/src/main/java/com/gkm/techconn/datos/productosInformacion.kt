@@ -3,7 +3,6 @@ package com.gkm.techconn.datos
 import com.gkm.techconn.modelo.productosDatos
 
 class productosInformacion {
-
     companion object {
         val productoList = listOf<productosDatos>(
             productosDatos(
