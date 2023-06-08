@@ -9,10 +9,11 @@ import com.gkm.techconn.databinding.ItemListProductoBinding
 import com.gkm.techconn.modelo.productosDatos
 import com.gkm.techconn.ui.view.FullScreenImageFragment
 
-class productoViewHolder(view:View, private val fragment: Fragment):RecyclerView.ViewHolder(view) {
+class productoViewHolder(view: View, private val fragment: Fragment) :
+    RecyclerView.ViewHolder(view) {
     private val binding = ItemListProductoBinding.bind(view)
 
-    fun render(productoDatosModel:productosDatos){
+    fun render(productoDatosModel: productosDatos) {
         binding.txtProDescr.text = productoDatosModel.descripcion
         binding.txtProCodigo.text = productoDatosModel.codigo
         binding.txtProMarca.text = productoDatosModel.marca
@@ -21,12 +22,13 @@ class productoViewHolder(view:View, private val fragment: Fragment):RecyclerView
         binding.txtProIndice.text = productoDatosModel.indice
         binding.txtProPrecio.text = productoDatosModel.precio
 
-        binding.imgProView.setOnClickListener{
-            val imageUrl:String = productoDatosModel.imagen
-            val fragmentManager: FragmentManager = fragment.childFragmentManager
-            val fullScreenImageFragment:FullScreenImageFragment = FullScreenImageFragment.newInstance(imageUrl)
+        binding.imgProView.setOnClickListener {
+            val imageUrl: String = productoDatosModel.imagen
+            val fragmentManager: FragmentManager = fragment.requireActivity().supportFragmentManager
+            val fullScreenImageFragment: FullScreenImageFragment =
+                FullScreenImageFragment.newInstance(imageUrl)
             fragmentManager.beginTransaction()
-                .replace(R.id.img_full_screen, fullScreenImageFragment)
+                .replace(R.id.content, fullScreenImageFragment)
                 .addToBackStack(null)
                 .commit()
         }

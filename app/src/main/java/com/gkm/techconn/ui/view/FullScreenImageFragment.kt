@@ -10,7 +10,7 @@ import com.squareup.picasso.Picasso
 
 class FullScreenImageFragment : Fragment() {
 
-    private var imageUrl:String? = null
+    private var imageUrl: String? = null
     private lateinit var binding: FragmentFullScreenImageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,9 +24,9 @@ class FullScreenImageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentFullScreenImageBinding.inflate(inflater,container,false)
+        binding = FragmentFullScreenImageBinding.inflate(inflater, container, false)
 
-        if(!imageUrl.isNullOrEmpty()){
+        if (!imageUrl.isNullOrEmpty()) {
             fullImage()
         }
 
@@ -36,13 +36,13 @@ class FullScreenImageFragment : Fragment() {
     private fun fullImage() {
         Picasso.get()
             .load(imageUrl)
-            .into(binding.imgFullScreen)
+            .into(binding.imageFullScreen)
     }
 
 
     companion object {
         private const val ARG_IMAGE_URL = "image_url"
-        fun newInstance(imageUrl:String):FullScreenImageFragment{
+        fun newInstance(imageUrl: String): FullScreenImageFragment {
             val fragment = FullScreenImageFragment()
             val args = Bundle()
             args.putString(ARG_IMAGE_URL, imageUrl)
