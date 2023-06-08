@@ -16,54 +16,54 @@ class productosInformacion {
                 "https://static.wixstatic.com/media/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg/v1/fill/w_281,h_300,al_c,q_80,enc_auto/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg"
             ),
             productosDatos(
-                "CINTA MASKING 1\" X 37M MULTIUSO DON PEPE",
-                "1-1-53",
-                "ABRO",
+                "CERRAD. MANJ. AL037-TM020 SN/CP (SERIE 85)",
+                "7-4-180",
+                "PLATINUM",
                 "UND",
-                "210",
+                "4",
                 "L",
-                "0.87",
-                "https://static.wixstatic.com/media/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg/v1/fill/w_281,h_300,al_c,q_80,enc_auto/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg"
+                "11.95",
+                "https://static.wixstatic.com/media/1ae92d_544f363d16e74bb69afd8c382ad52386~mv2.png/v1/fill/w_342,h_489,al_c,usm_0.66_1.00_0.01/1ae92d_544f363d16e74bb69afd8c382ad52386~mv2.png"
             ),
             productosDatos(
-                "TIRADERA # P22217-128 SS TUBO VACIA (10 MM) (53.1001)",
-                "5-1-660",
+                "CERRAD. MANJ. AL040-TM018 SN/GP (SERIE 85)",
+                "7-4-181",
                 "PLATINUM",
                 "UND",
-                "2400",
+                "295",
                 "I",
-                "0.40",
-                "https://static.wixstatic.com/media/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg/v1/fill/w_281,h_300,al_c,q_80,enc_auto/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg",
+                "11.95",
+                "https://static.wixstatic.com/media/1ae92d_3c398698faae4f4395eac3cbe130dba5~mv2.png/v1/fill/w_369,h_489,al_c,usm_0.66_1.00_0.01/1ae92d_3c398698faae4f4395eac3cbe130dba5~mv2.png",
             ),
             productosDatos(
-                "AMARRA NYLON 12X4.8MM NEGRO",
-                "1-2-27",
-                "BEST VALUE",
-                "CIENTO",
-                "20",
-                "L",
-                "4.95",
-                "https://static.wixstatic.com/media/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg/v1/fill/w_281,h_300,al_c,q_80,enc_auto/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg"
+                "CERRAD. MANJ. AL067-ZM007 RG (SERIE 85)",
+                "7-4-173",
+                "WEST",
+                "UND",
+                "33",
+                "I",
+                "15.90",
+                "https://static.wixstatic.com/media/1ae92d_8332b9b950874025976cb951bea04c75~mv2.png/v1/fill/w_329,h_489,al_c,usm_0.66_1.00_0.01/1ae92d_8332b9b950874025976cb951bea04c75~mv2.png"
             ),
             productosDatos(
-                "NIVELADOR DE MUEBLE 10 CM (ZOCALO) (AJ097)",
-                "1-12-54",
+                "CERRAD. MANJ. AL078-ZL014 YB (SERIE 99)",
+                "7-4-168",
+                "WEST",
+                "UND",
+                "0",
+                "I",
+                "18.80",
+                "https://static.wixstatic.com/media/1ae92d_069d25f2c3ee4bbf9b06410dd7ad6ac3~mv2.png/v1/fill/w_287,h_489,al_c,usm_0.66_1.00_0.01/1ae92d_069d25f2c3ee4bbf9b06410dd7ad6ac3~mv2.png"
+            ),
+            productosDatos(
+                "CERRAD. MANJ. AL039-TM014 YB (SERIE 85)",
+                "7-4-183",
                 "PLATINUM",
                 "UND",
-                "450",
+                "127",
                 "I",
-                "1.68",
-                "https://static.wixstatic.com/media/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg/v1/fill/w_281,h_300,al_c,q_80,enc_auto/1ae92d_f59c95b7991849c89e5839e5447e9ae8~mv2.jpg"
-            ),
-            productosDatos(
-                "TIRADERA # P21203-128 BRN PUNTOS (51.0991B)",
-                "5-1-509",
-                "PLATINUM",
-                "UND",
-                "580",
-                "I",
-                "0.92",
-                "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg"
+                "11.95",
+                "https://static.wixstatic.com/media/1ae92d_8005f564de594c35bf6aaaeff3f5c48d~mv2.png/v1/fill/w_374,h_489,al_c,usm_0.66_1.00_0.01/1ae92d_8005f564de594c35bf6aaaeff3f5c48d~mv2.png"
             ),
             productosDatos(
                 "ESCUADRA REFUERZO INDUMA 38X38X38 MM ZINC (FUNDA 50 UNDS)",
