@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/cardViewImdiscor"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_cli_name"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nombre del cliente" />
+
+        <TextView
+            android:id="@+id/txt_cli_cod"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ruc"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_name" />
+
+        <TextView
+            android:id="@+id/txt_cli_direc"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/direccion"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_cod" />
+
+        <TextView
+            android:id="@+id/txt_cli_cat"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_direc" />
+
+        <TextView
+            android:id="@+id/txt_cli_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_cod"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_name"
+            tools:text="092135681001" />
+
+        <TextView
+            android:id="@+id/txt_cli_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_direc"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_codigo"
+            tools:text="CDLA. LOS ESTEROS MZ 9A V.43" />
+
+        <TextView
+            android:id="@+id/txt_cli_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toStartOf="@id/txt_cli_direccion"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_direccion"
+            tools:text="A" />
+
+        <TextView
+            android:id="@+id/txt_cli_ciud"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/ciudad"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintEnd_toStartOf="@id/txt_cli_ciudad"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_name" />
+
+        <TextView
+            android:id="@+id/txt_cli_ciudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_direc"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_name"
+            tools:text="SANTA ELENA" />
+
+        <TextView
+            android:id="@+id/txt_cli_cup"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/cupo"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_categoria"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_direccion" />
+
+        <TextView
+            android:id="@+id/txt_cli_cupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_cup"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_direccion"
+            tools:text="3000" />
+
+        <TextView
+            android:id="@+id/txt_cli_deu"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/deuda"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_cupo"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_direccion" />
+
+        <TextView
+            android:id="@+id/txt_cli_deuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textImdiscor"
+            app:layout_constraintStart_toEndOf="@id/txt_cli_deu"
+            app:layout_constraintTop_toBottomOf="@id/txt_cli_direccion"
+            tools:text="3000" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

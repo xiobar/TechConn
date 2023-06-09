@@ -53,4 +53,10 @@
     <string name="empaque">Empaque:</string>
     <string name="stock">Stock:</string>
     <string name="recordar">recordar</string>
+    <string name="categoria">Categoria:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="ruc">Ruc:</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="cupo">Cupo:</string>
+    <string name="deuda">Deuda:</string>
 </resources>
