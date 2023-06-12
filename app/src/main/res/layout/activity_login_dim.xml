@@ -9,10 +9,11 @@
 
     <ImageView
         android:id="@+id/loginDimcorp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="300dp"
         android:contentDescription="@string/dimcorp"
         android:src="@drawable/dimcorp_logo"
+        app:layout_constraintBottom_toTopOf="@id/txt_login_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,11 +52,11 @@
         android:id="@+id/swi_dim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:checked="true"
         android:text="@string/mensajeLogin"
         app:layout_constraintBottom_toTopOf="@+id/btn_logindim"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/txt_login_password"
+        app:layout_constraintStart_toStartOf="@id/txt_login_password"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password"
         app:thumbTint="@drawable/thump_dim" />
 

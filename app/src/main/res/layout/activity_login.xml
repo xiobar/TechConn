@@ -9,18 +9,18 @@
 
     <ImageView
         android:id="@+id/loginImdiscor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
         android:contentDescription="@string/imdiscor"
         android:src="@drawable/imdiscor_logo"
+        app:layout_constraintBottom_toTopOf="@id/txt_login_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_usuario"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:hint="@string/ingrese_el_usuario"
@@ -28,13 +28,14 @@
         android:singleLine="true"
         android:textColorHint="@color/messageLog"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/txt_login_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginImdiscor" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_password"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/ingrese_contrase_a"
         android:inputType="numberPassword"
@@ -42,6 +43,7 @@
         android:singleLine="true"
         android:textColorHint="@color/messageLog"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/swi_imdis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_usuario" />
@@ -49,13 +51,14 @@
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/swi_imdis"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:checked="true"
         android:contentDescription="@string/recordar"
         android:text="@string/mensajeLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_login"
+        app:layout_constraintEnd_toEndOf="@id/txt_login_password"
+        app:layout_constraintStart_toStartOf="@id/txt_login_password"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password"
         app:thumbTint="@drawable/thump" />
 
@@ -69,11 +72,13 @@
         android:textColor="@color/iconImdiscor"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/mensaje_log"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swi_imdis" />
 
     <TextView
+        android:id="@+id/mensaje_log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mensajeLog"
