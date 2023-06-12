@@ -20,7 +20,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_usuario"
-        android:layout_width="350dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:hint="@string/ingrese_el_usuario"
@@ -34,7 +34,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_login_password"
-        android:layout_width="350dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:hint="@string/ingrese_contrase_a"
         android:inputType="numberPassword"
@@ -46,26 +46,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_usuario" />
 
-    <TextView
-        android:id="@+id/mensajeLog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/mensajeLogin"
-        android:textColor="@color/textImdiscor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/swi_imdis"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_login_password" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/swi_imdis"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:contentDescription="@string/recordar"
+        android:text="@string/mensajeLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mensajeLog"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password"
         app:thumbTint="@drawable/thump" />
 
@@ -81,12 +71,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mensajeLog" />
+        app:layout_constraintTop_toBottomOf="@+id/swi_imdis" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:text="@string/mensajeLog"
         android:textAlignment="center"
         android:textColor="@color/messageLog"
