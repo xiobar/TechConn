@@ -18,3 +18,13 @@ data class productosDatos(
     val precio: String,
     val imagen:String
 )
+
+data class clientesDatos(
+    val nameCliCliente: String,
+    val codigoCli:String,
+    val direccionCli:String,
+    val categoriaCli:String,
+    val ciudad:String,
+    val cupoCli:String,
+    val deudaCli:String
+)
