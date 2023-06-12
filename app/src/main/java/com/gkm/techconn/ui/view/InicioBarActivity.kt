@@ -43,6 +43,12 @@ class InicioBarActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
         val navigationView: NavigationView = binding.navView
         navigationView.setNavigationItemSelectedListener(this)
+
+        if(savedInstanceState == null){
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.content, InicioFragment())
+                .commit()
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {  //Navegador de items menu
