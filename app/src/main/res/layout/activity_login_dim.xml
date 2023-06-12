@@ -42,32 +42,20 @@
         android:singleLine="true"
         android:textColorHint="@color/messageLog"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/mensajeLog"
+        app:layout_constraintBottom_toTopOf="@id/swi_dim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_usuario" />
-
-    <TextView
-        android:id="@+id/mensajeLog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/mensajeLogin"
-        android:textColor="@color/textDimcorp"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_logindim"
-        app:layout_constraintEnd_toStartOf="@+id/swi_dim"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_login_password" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/swi_dim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:text="@string/mensajeLogin"
         app:layout_constraintBottom_toTopOf="@+id/btn_logindim"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mensajeLog"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_login_password"
         app:thumbTint="@drawable/thump_dim" />
 
@@ -84,7 +72,7 @@
         app:layout_constraintBottom_toTopOf="@+id/mensajeDoc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mensajeLog" />
+        app:layout_constraintTop_toBottomOf="@+id/swi_dim" />
 
     <TextView
         android:id="@+id/mensajeDoc"
